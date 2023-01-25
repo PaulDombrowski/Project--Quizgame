@@ -141,6 +141,9 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,255,255,0) 0%, rg
 text-align: left;
 }
 
+  #title1row2 {
+  font-size: 0.7em;
+  }
 
 
 .text-introduction {
@@ -188,13 +191,18 @@ text-align: left;
 
 .question {
   
+  min-height: 70vh;
   margin-top: 25vh;
   margin-left: 7vw;
   margin-right: 7vw; 
   border-left: rgb(112, 112, 112);
   border-width: 2px;
   border-style: solid;
+  transition: 0.5s;
+}
 
+.question:hover {
+      background-color: rgb(43, 43, 43);
 }
 
 .question-text {
@@ -219,6 +227,7 @@ text-align: left;
   margin-left: 4vw;
   border-width: 4px;
   border-color: white;
+  border-radius: 10px;
   border-style: solid;
   transition: 0.4s;
   min-width: 15vw; 
@@ -284,6 +293,14 @@ text-align: left;
   justify-content: space-around;
 }
 
+#deepfakepicture, 
+#deepfakepictureKR {
+  width: 90%;
+  height: auto; 
+  align-items: center;
+}
+
+
 /*  explicit for question3 */
 
 #spring1 {
@@ -304,10 +321,16 @@ text-align: left;
   border-color: rgb(255, 0, 200);
 }
 
+/*  explicit for question4 */
 
 
+#answer-for-left-window4 {
+  border-color: rgb(255, 0, 200);
+}
 
-
+#answer-for-right-window4 {
+  border-color: rgb(106, 255, 205); 
+}
 
 
 

@@ -89,7 +89,7 @@ if (getDiv4.style.display === 'none') {
     button4.removeEventListener("click", answerQuestion4)
     score += 150
     document.querySelector("#score span").innerText = score
-    positionTriangleArray = [positonTriangle += 10 , '%' ] 
+    positionTriangleArray = [positonTriangle += 12 , '%' ] 
     getTriangle.style.top = positionTriangleArray.join("")
 } else {
     getDiv4.style.display = 'none'; 
@@ -113,7 +113,7 @@ if (getDiv5.style.display === 'none') {
     button5.removeEventListener("click", answerQuestion5)
     score += 150
     document.querySelector("#score span").innerText = score
-    positionTriangleArray = [positonTriangle += 10 , '%' ] 
+    positionTriangleArray = [positonTriangle += 12 , '%' ] 
     getTriangle.style.top = positionTriangleArray.join("")
 } else {
     getDiv5.style.display = 'none'; 
@@ -138,3 +138,89 @@ if (getDiv6.style.display === 'none') {
 }
 }
 
+/* question 4 */
+
+
+let button7 = document.getElementById("button-answer-left4")
+button7.addEventListener("click", answerQuestion7)
+
+
+function answerQuestion7() {
+    console.log("called")
+let getDiv7 = document.getElementById("answer-for-left-window4")
+button7.style.borderWidth = "0.4vw"
+
+if (getDiv7.style.display === 'none') {
+    getDiv7.style.display = 'inherit';
+    button8.removeEventListener("click", answerQuestion8)
+    button7.removeEventListener("click", answerQuestion7)
+    
+} else {
+    getDiv7.style.display = 'none'; 
+}
+}
+
+
+let button8 = document.getElementById("button-answer-right4")
+button8.addEventListener("click", answerQuestion8)
+
+
+function answerQuestion8() {
+    console.log("called")
+let getDiv8 = document.getElementById("answer-for-right-window4")
+button8.style.borderWidth = "0.4vw"
+if (getDiv8.style.display === 'none') {
+    getDiv8.style.display = 'inherit';
+    button7.removeEventListener("click", answerQuestion7)
+    button8.removeEventListener("click", answerQuestion8)
+    score += 150
+    document.querySelector("#score span").innerText = score
+    positionTriangleArray = [positonTriangle += 12 , '%' ] 
+    getTriangle.style.top = positionTriangleArray.join("")
+} else {
+    getDiv8.style.display = 'none'; 
+}
+}
+
+
+/* question 5 */
+
+let button9 = document.getElementById("button-answer-left5")
+button9.addEventListener("click", answerQuestion9)
+
+
+function answerQuestion9() {
+    console.log("called")
+let getDiv9 = document.getElementById("answer-for-left-window5")
+button9.style.borderWidth = "0.4vw"
+
+if (getDiv9.style.display === 'none') {
+    getDiv9.style.display = 'inherit';
+    button9.removeEventListener("click", answerQuestion9)
+    button10.removeEventListener("click", answerQuestion9)
+    score += 150
+    document.querySelector("#score span").innerText = score
+    positionTriangleArray = [positonTriangle += 12 , '%' ] 
+    getTriangle.style.top = positionTriangleArray.join("")
+} else {
+    getDiv9.style.display = 'none'; 
+}
+}
+
+
+let button10 = document.getElementById("button-answer-right5")
+button10.addEventListener("click", answerQuestion10)
+
+
+function answerQuestion10() {
+    console.log("called")
+let getDiv10 = document.getElementById("answer-for-right-window5")
+button10.style.borderWidth = "0.4vw"
+if (getDiv10.style.display === 'none') {
+    getDiv10.style.display = 'inherit';
+    button10.removeEventListener("click", answerQuestion10)
+    button9.removeEventListener("click", answerQuestion9)
+} else {
+    getDiv10.style.display = 'none'; 
+}
+}
