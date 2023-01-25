@@ -13,30 +13,37 @@ a {
 /*score fixed */
 
 .score {
-  padding-right: 7vw;
-  margin-left: 7vw;
+  margin-left: 0vw; 
   color: white;
   font-size: 1.5em;
-  height: 3vh;
+  height: 100%;
   position: fixed; 
-  width: 70vw; 
+  width: 1vw; 
   z-index: 99;
-  background: rgb(0,0,0);
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,183,250,0.9332107843137255) 0%, rgba(0,255,188,0.9108018207282913) 100%);
+  background: rgb(75,255,205);
+  background: linear-gradient(0deg, rgba(75,255,205,1) 0%, rgba(255,140,208,1) 100%);
   display: flex;
+  flex-direction: column; 
+  justify-content: flex-start;
 }
 
 #symbol {
   width: 0px;
-  height: 0px;
-  -webkit-transform:rotate(360deg);
-  border-style: solid;
-  border-width: 27px 17.5px 0 17.5px;
-  border-color: #ff45f3 transparent transparent transparent;
+height: 0px;
+-webkit-transform:rotate(360deg);
+border-style: solid;
+border-width: 15px 30px 15px 0;
+border-color: transparent #000000 transparent transparent;
+
   
 position: relative; 
-left: 2%;   
+top: 7%;   
 transition: 1s;
+}
+
+#number {
+  margin-top: 1vw; 
+  transform: rotate(-90deg);
 }
  
 
@@ -163,6 +170,7 @@ text-align: left;
 }
 
 .title-break {
+  margin-top: 1vh;
   font-size: 0.5em; 
 }
 
@@ -172,15 +180,19 @@ text-align: left;
 
 /* questions general */
 
-
+.h2 {
+  margin-left: 4vw;
+  font-size: 1.1em;
+  color: rgb(106, 255, 205);
+}
 
 .question {
   
   margin-top: 25vh;
   margin-left: 7vw;
   margin-right: 7vw; 
-  border-left: rgb(106, 255, 205);
-  border-width: 10px;
+  border-left: rgb(112, 112, 112);
+  border-width: 2px;
   border-style: solid;
 
 }

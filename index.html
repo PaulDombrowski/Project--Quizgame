@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
 	<meta charset="UTF-8">
-	<title>Educational Game that deals with our notion of reality</title>
+	<title>Educational Game that deals with our notion of authenticity</title>
 	<meta name="description" content="Kurzbeschreibung">
 	<link href="./stylesheet.css" rel="stylesheet">
 </head>
@@ -11,8 +11,7 @@
   <!-- score fixed  -->
     
   <div class="score" id="score">
-    <span>0</span>
-     <span> Points</span> 
+    <span id="number">0 </span>
       <p id="symbol"></p>
   </div>
 
@@ -56,9 +55,9 @@
         <div class="text-flexcontainer">
           <p class="text-introduction">
           Welcome!
-          In the following you have the possibility to answer a quiz that deals with our notion of reality in times of virulent automatic machine learning. 
-          In recent years, advancements in technology have made it increasingly difficult for individuals to discern reality from fiction. 
-          The advent of deepfakes, bots, and artificial intelligence (AI) have allowed for the manipulation of images, videos, and audio recordings, making it 
+          In the following you have the possibility to answer a quiz that deals with our notion of authenticity in times of virulent automatic machine learning. 
+          In recent years, advancements in technology have made it increasingly difficult for individuals to distinguish reality from fiction. 
+          The advent of deepfakes, bots, and artificial intelligence (AI) have allowed for the manipulation of images, videos, and audio recordings making it 
           challenging to determine the authenticity of media.
          </p>
          <p class="text-introduction">
@@ -67,8 +66,8 @@
           confirms their existing beliefs.
         </p>
         <p class="text-introduction">
-          To combat these challenges, it is important for individuals to be critical and skeptical when consuming media, 
-          and to fact-check information from multiple sources. In order to train our critical approach towards machine generated content you can answer the following Quiz-Game. 
+          To combat these challenges, it is important for individuals to be critical when consuming media
+          and to fact-check information from multiple sources. In order to train our critical approach towards machine-generated content you can play the following Quiz-Game. 
         </p>
 
         </div>
@@ -77,12 +76,12 @@
    
       <!-- Spielheader-->
       <div class="gameheader">
-      <h1 class="title1">let's get started with the game. 
-      <div class="title-break">it is quite simple. all you have to do is decide whether the following material is human-generated or machine-generated...</h1></div> </div>
+      <h1 class="title1">Human or Machine? 
+      <div class="title-break"> Let's get started with the game. It is quite simple. All you have to do is decide whether the following material is human-generated or machine-generated...</h1></div> </div>
     
     <!-- question1 -->
 
-    <div class="question" id="question1">
+    <div class="question" id="question1"> <h2 class="h2">Question 1/6</h2>
         <div class="question-text" id="question-text1" > As you can see there are two small texts about the same topic. <br> One of them is written by a so called artificial intelligence. 
           The other one is written by a human. Find the one that is written by an AI.</div>
 
@@ -127,7 +126,7 @@
     <!-- question2 -->
 
 
-    <div class="question" id="question2">
+    <div class="question" id="question2"> <h2 class="h2">Question 2/6</h2>
       <div class="question-text" id="question-text2" > You have given two .gifs of Keanu Reeves doing things. <br> One of them is a DeepFake and one of them is real (whatever that means). 
        Can you tell which one the DeepFake is?</div>
 
@@ -159,7 +158,7 @@
 
       <!-- question3 -->
 
-      <div class="question" id="question2">
+      <div class="question" id="question2"> <h2 class="h2">Question 3/6</h2>
         <div class="question-text" id="question-text2" > What you can see here are two pictures <br> One of them is a human-made photografy and the other one is a machine-made picture. 
          Which one is made by a machine?</div>
   
@@ -176,9 +175,9 @@
   
            <!-- answers 	--> 
           <button class="answer-for-left-window" id="answer-for-left-window3"  type="button" style="display:none">
-              <h3 id="ai-text-answerleft">Unfortunetly you are wrong, but u are still beautiful</h3>  
+              <h3 id="ai-text-answerleft">You got it!</h3>  
               <img class="heart" id="heart1" src="./Material/pngegg.png" alt="heart">
-               <div> Next time you could consider the context? <br> How likely is it that Keanu Reeves does ASMR-Videos? </div>
+               <div> In this case you could have used  <br> How likely is it that Keanu Reeves does ASMR-Videos? </div>
   
               <button class="answer-for-right-window" id="answer-for-right-window3"  type="button" style="display:none" >
                 <h3 id="ai-text-answerleft">you are right</h3>  
