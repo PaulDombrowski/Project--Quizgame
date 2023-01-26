@@ -20,8 +20,8 @@ a {
   position: fixed; 
   width: 1vw; 
   z-index: 99;
-  background: rgb(75,255,205);
-  background: linear-gradient(0deg, rgba(75,255,205,1) 0%, rgba(255,140,208,1) 100%);
+  background: rgb(77,255,220);
+  background: linear-gradient(0deg, rgba(77,255,220,1) 0%, rgba(255,102,192,1) 100%);
   display: flex;
   flex-direction: column; 
   justify-content: flex-start;
@@ -44,6 +44,8 @@ transition: 1s;
 #number {
   margin-top: 1vw; 
   transform: rotate(-90deg);
+  color: #000000;
+  font-weight: bold;
 }
  
 
@@ -334,4 +336,23 @@ text-align: left;
 
 
 
+/*  explicit for question5 */
 
+#answer-for-left-window5 {
+  border-color: rgb(106, 255, 205); 
+}
+
+#answer-for-right-window5 {
+  border-color: rgb(255, 0, 200);
+}
+
+
+#painting1 {
+  max-width: 20vw; 
+  width: 90%
+
+}
+#painting2 {
+  max-width: 20vw;
+  width: 90%; 
+}
