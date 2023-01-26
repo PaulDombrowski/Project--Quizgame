@@ -224,3 +224,75 @@ if (getDiv10.style.display === 'none') {
     getDiv10.style.display = 'none'; 
 }
 }
+
+/* question 6 */
+
+let button11 = document.getElementById("button-answer-left6")
+button11.addEventListener("click", answerQuestion11)
+
+
+function answerQuestion11() {
+    console.log("called")
+let getDiv11 = document.getElementById("answer-for-left-window6")
+button11.style.borderWidth = "0.4vw"
+
+if (getDiv11.style.display === 'none') {
+    getDiv11.style.display = 'inherit';
+    button11.removeEventListener("click", answerQuestion11)
+    button12.removeEventListener("click", answerQuestion12)
+    score += 150
+    document.querySelector("#score span").innerText = score
+    positionTriangleArray = [positonTriangle += 12 , '%' ] 
+    getTriangle.style.top = positionTriangleArray.join("")
+} else {
+    getDiv11.style.display = 'none'; 
+}
+}
+
+
+let button12 = document.getElementById("button-answer-right6")
+button12.addEventListener("click", answerQuestion12)
+
+
+function answerQuestion12() {
+    console.log("called")
+let getDiv12= document.getElementById("answer-for-right-window6")
+button12.style.borderWidth = "0.4vw"
+if (getDiv12.style.display === 'none') {
+    getDiv12.style.display = 'inherit';
+    button11.removeEventListener("click", answerQuestion11)
+    button12.removeEventListener("click", answerQuestion12)
+    score += 150
+    document.querySelector("#score span").innerText = score
+    positionTriangleArray = [positonTriangle += 12 , '%' ] 
+    getTriangle.style.top = positionTriangleArray.join("")
+} else {
+    getDiv12.style.display = 'none'; 
+}
+}
+
+
+/* question 6 */
+
+let buttonResult = document.querySelector("#button-result1")
+buttonResult.addEventListener("click", showResult)
+
+function showResult() {
+    console.log("call result")
+    buttonResult.parentNode.removeChild(buttonResult) 
+    let getFinalScore = document.querySelector("#pointsOverview1 span")
+    getFinalScore.innerText = score
+    let getPointsOverview = document.querySelector("#pointsOverview1")
+    getPointsOverview.style.display = 'inherit'
+    
+    if (score < 450) {
+        let getLowerPoints = document.querySelector("#lowerPoints")
+        getLowerPoints.style.display = 'inherit'
+    } else {
+        let getHigherPoints = document.querySelector("#HigherPoints")
+        getHigherPoints.style.display = 'inherit'
+    }
+
+}
+
+
