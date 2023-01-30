@@ -61,8 +61,7 @@ transition: 1s;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0px;
-    height: 80vh;
+    height: 100vh;
   }
   
   .perspective-text {
@@ -141,6 +140,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,255,255,0) 0%, rg
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 text-align: left;
+
 }
 
   #title1row2 {
@@ -443,5 +443,8 @@ text-align: left;
   font-size: 2em;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;  
+
 }
+
+
